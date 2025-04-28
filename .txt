@@ -1,0 +1,22 @@
+Diferencias entre arquitectura REST y microservicios
+Los microservicios son un enfoque que compone el software en servicios pequeños e independientes, cada microservicio resuelve 
+un único problema o realiza una tarea específica. Una API es un contrato de comunicación entre dos componentes de software. Las
+API especifican los datos que el componente de software necesita para realizar una función.
+Un microservicio contiene todo el código necesario para una función determinada de la aplicación. Una API es un mecanismo 
+de comunicación para acceder a esa función. 
+Desafíos si se quisiera dividir aplicación REST actual en microservicios
+Cada servicio suele contener una base de datos, una capa de acceso a los datos, lógica empresarial y una API. 
+En primer lugar hacer una separación correcta de la lógica,asegurar una buena conexión utilizando por ejemplo APIs HTTP,
+aplicar una buena seguridad para reducir el riesgo de intrusión y malware, también gestionar las verificaciones y autorizaciones,
+decidir entre una base de datos compartida o múltiples bases por microservicio. También, es complicado de testear o depurar debido 
+a su estilo arquitectónico distribuido.
+Ventajas de los microservicios frente a una API REST monolítica
+-La arquitectura de microservicios agiliza el proceso de desarrollo, pueden desarrollarse y desplegarse  independientemente para 
+realizar sus tareas y pueden escalarse fácilmente.
+-Proporcionan mayor flexibilidad ya que se puede elegir el lenguaje, herrmientas.
+-Ayuda a aumentar la seguridad.
+-Si uno de los servicios falla, no hará caer toda la aplicación, las otras partes seguirán funcionando como se espera.
+-Los microservicios siguen un enfoque de enrutamiento simple para recibir peticiones y transmitir las respuestas.
+
+
+
